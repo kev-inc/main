@@ -325,11 +325,6 @@ Sets the goal to a $80 Nike shoe.
 Show details about the current goal set. +
 Format: `viewGoal`
 
-==== Viewing the goal progress : `viewGoalProgress`
-
-Show details of the goal and your progress with regards to hitting that goal. +
-Format: `viewGoalProgress`
-
 === Miscellaneous
 
 ==== Logging in to ePiggy : `login`
@@ -416,8 +411,6 @@ e.g.`editBudget $300.00 t/28`
 e.g. `setGoal n/nike shoes $/80`
 
 * *View Savings Goal* : `viewGoal`
-
-* *View Goal Progress* : `viewGoalProgress`
 
 * *Login* : `login u/USERNAME p/PASSWORD` +
 e.g. `login u/johndoe1990 p/password123`
