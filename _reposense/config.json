@@ -1,0 +1,30 @@
+{
+  "authors":
+  [
+    {
+      "githubId": "kev-inc",
+      "displayName": "KEV...ONG",
+      "authorNames": ["kev-inc", "Kevin"]
+    },
+    {
+      "githubId": "pdnm",
+      "displayName": "PHA...INH",
+      "authorNames": ["pdnm"]
+    },
+    {
+      "githubId": "rahulb99",
+      "displayName": "RAH...AID",
+      "authorNames": ["rahulb99", "Rahul Baid"]
+    },
+    {
+      "githubId": "tehwenyi",
+      "displayName": "TEH... YI",
+      "authorNames": ["tehwenyi"]
+    },
+    {
+      "githubId": "yunjun199321",
+      "displayName": "WU ...JUN",
+      "authorNames": ["yunjun199321"]
+    }
+  ]
+}
