@@ -39,7 +39,7 @@ public class SavingsPanel extends UiPart<Region> {
         });
 
         currentSavings.setText(savings.getValue().toString());
-        if(goal.getValue() == null) {
+        if (goal.getValue() == null) {
             currentGoal.setText("(None set)");
             amountDifference.setText("$0.00");
         } else {
@@ -47,7 +47,5 @@ public class SavingsPanel extends UiPart<Region> {
             float diff = goal.getValue().getAmount().getAmount() - savings.getValue().getSavings();
             amountDifference.setText("$" + diff);
         }
-
-
     }
 }
