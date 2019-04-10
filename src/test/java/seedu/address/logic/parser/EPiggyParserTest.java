@@ -5,7 +5,6 @@ import static org.junit.Assert.assertTrue;
 import static seedu.address.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static seedu.address.commons.core.Messages.MESSAGE_UNKNOWN_COMMAND;
 
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -21,7 +20,6 @@ import seedu.address.logic.commands.epiggy.HelpCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.testutil.TypicalIndexes;
 
-@Ignore
 public class EPiggyParserTest {
     @Rule
     public ExpectedException thrown = ExpectedException.none();

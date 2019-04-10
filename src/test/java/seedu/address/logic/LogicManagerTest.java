@@ -1,7 +1,6 @@
 package seedu.address.logic;
 
 import static org.junit.Assert.assertEquals;
-import static seedu.address.commons.core.Messages.MESSAGE_INVALID_EXPENSE_DISPLAYED_INDEX;
 import static seedu.address.commons.core.Messages.MESSAGE_UNKNOWN_COMMAND;
 import static seedu.address.testutil.epiggy.TypicalExpenses.BOWLING;
 
@@ -20,6 +19,7 @@ import seedu.address.logic.commands.CommandTestUtil;
 import seedu.address.logic.commands.HistoryCommand;
 import seedu.address.logic.commands.ListCommand;
 import seedu.address.logic.commands.epiggy.AddExpenseCommand;
+import seedu.address.logic.commands.epiggy.DeleteExpenseCommand;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.Model;
@@ -62,7 +62,7 @@ public class LogicManagerTest {
     @Test
     public void execute_commandExecutionError_throwsCommandException() {
         String deleteCommand = "de 9";
-        assertCommandException(deleteCommand, MESSAGE_INVALID_EXPENSE_DISPLAYED_INDEX);
+        assertCommandException(deleteCommand, DeleteExpenseCommand.MESSAGE_INDEX_OUT_OF_BOUNDS);
         assertHistoryCorrect(deleteCommand);
     }
 
@@ -73,8 +73,8 @@ public class LogicManagerTest {
         assertHistoryCorrect(listCommand);
     }
 
-    @Ignore
     @Test
+    @Ignore
     public void execute_storageThrowsIoException_throwsCommandException() throws Exception {
         // Setup LogicManager with JsonEPiggyIoExceptionThrowingStub
         JsonEPiggyStorage addressBookStorage =

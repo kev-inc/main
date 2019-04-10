@@ -14,7 +14,7 @@ import seedu.address.logic.commands.CommandResult;
 import seedu.address.logic.commands.ListCommand;
 import seedu.address.logic.commands.exceptions.CommandException;
 
-@Ignore
+
 public class CommandBoxTest extends GuiUnitTest {
 
     private static final String COMMAND_THAT_SUCCEEDS = ListCommand.COMMAND_WORD;
@@ -74,6 +74,7 @@ public class CommandBoxTest extends GuiUnitTest {
     }
 
     @Test
+    @Ignore
     public void handleKeyPress_startingWithUp() {
         // empty history
         assertInputHistory(KeyCode.UP, "");

@@ -77,7 +77,6 @@ public class FindExpenseCommandTest {
                         BOWLING, IPHONE), CliSyntax.PREFIX_NAME);
     }
     @Test
-    @Ignore
     public void execute_multipleNameKeywords_multipleExpensesFound() {
         model = new ModelManager(getTypicalEPiggy(), new UserPrefs());
         findExpenseCommandTester(" n/dumpling n/avengers n/clothes ", 3,

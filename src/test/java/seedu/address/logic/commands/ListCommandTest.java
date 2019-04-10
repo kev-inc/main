@@ -4,7 +4,6 @@ import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;
 import static seedu.address.testutil.epiggy.TypicalExpenses.getTypicalEPiggy;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import seedu.address.logic.CommandHistory;
@@ -34,7 +33,6 @@ public class ListCommandTest {
     }
 
     @Test
-    @Ignore
     public void execute_listIsFiltered_showsEverything() {
         CommandTestUtil.showPersonAtIndex(model, TypicalIndexes.INDEX_FIRST_PERSON);
         assertCommandSuccess(new ListCommand(), model, commandHistory, ListCommand.MESSAGE_SUCCESS, expectedModel);

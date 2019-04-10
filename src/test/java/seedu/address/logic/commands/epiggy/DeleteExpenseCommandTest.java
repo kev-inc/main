@@ -6,7 +6,6 @@ import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;
 import static seedu.address.logic.commands.CommandTestUtil.showExpenseAtIndex;
 import static seedu.address.testutil.epiggy.TypicalExpenses.getTypicalEPiggy;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import seedu.address.commons.core.index.Index;
@@ -59,7 +58,6 @@ public class DeleteExpenseCommandTest {
     }
 
     @Test
-    @Ignore
     public void execute_invalidIndex_throwsCommandException() {
         showExpenseAtIndex(model, TypicalIndexes.INDEX_FIRST_EXPENSE);
         Index outOfBoundIndex = TypicalIndexes.INDEX_SECOND_EXPENSE;

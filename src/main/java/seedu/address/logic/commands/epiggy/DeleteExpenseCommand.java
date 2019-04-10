@@ -1,7 +1,6 @@
 package seedu.address.logic.commands.epiggy;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.address.commons.core.Messages.MESSAGE_INVALID_EXPENSE_DISPLAYED_INDEX;
 
 import java.util.List;
 
@@ -44,7 +43,7 @@ public class DeleteExpenseCommand extends Command {
         List<Expense> lastShownExpenseList = model.getFilteredExpenseList();
 
         if (targetIndex.getZeroBased() >= lastShownExpenseList.size()) {
-            throw new CommandException(MESSAGE_INVALID_EXPENSE_DISPLAYED_INDEX);
+            throw new CommandException(MESSAGE_INDEX_OUT_OF_BOUNDS);
         }
 
         Expense expenseToDelete = lastShownExpenseList.get(this.targetIndex.getZeroBased());
